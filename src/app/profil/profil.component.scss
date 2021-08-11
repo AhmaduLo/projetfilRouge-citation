@@ -1,0 +1,93 @@
+@media (max-width: 558px) {
+  .profil_name {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+
+    .nom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      text-decoration: underline;
+      font-style: oblique;
+    }
+
+    .fa {
+      font-size: 55px;
+      
+    }
+  }
+
+  .cont_citation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mycitation {
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    overflow: auto;
+  }
+
+  .icons {
+    border: 1px solid;
+    background-color: rgb(252, 0, 0);
+    .fa {
+     
+      margin: 8px;
+      cursor: pointer;
+    }
+  }
+}
+//-------ordi--------------------------------------------
+@media (min-width: 558px) {
+  .profil_name {
+    margin-top: 25px;
+    //border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+
+    .nom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      text-decoration: underline;
+      font-style: oblique;
+    }
+
+    .fa {
+      font-size: 55px;
+    }
+  }
+
+  .cont_citation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mycitation {
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    overflow: auto;
+  }
+
+  .icons {
+    background-color: rgb(252, 0, 0);
+    .fa {
+      margin: 8px;
+      cursor: pointer;
+    }
+  }
+}

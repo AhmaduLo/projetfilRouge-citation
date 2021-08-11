@@ -1,0 +1,28 @@
+<nav>
+<div class="container">
+
+<div class="profil_name">
+    <div class="info">
+    <span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+    <p class="nom"> {{ user?.username }}</p>
+</div>
+
+</div>
+    <div class="cont_citation">
+<div class="mycitation" *ngFor="let citation of user?.citations">
+    <div class="icons">
+        <span (click)="supp(citation)"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+        <span routerLink="/update/{{citation.id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+    </div> 
+    
+    <p>{{ citation?.text }}</p>   
+</div>
+
+
+</div>
+
+
+
+</div>
+</nav>
+

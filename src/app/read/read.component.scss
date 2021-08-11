@@ -1,0 +1,104 @@
+@media (max-width: 558px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    .mode_desk{
+        display: none;
+    }
+    .container {
+      background-color: rgb(235, 186, 186);
+
+      .inputs {
+        label {
+          display: flex;
+          justify-content: center;
+          font-size: 25px;
+          text-decoration: underline;
+          font-style: oblique;
+          color: lightcoral;
+          margin-top: 25px;
+          margin-top: 25px;
+        }
+        input{
+            width: 10px;
+        }
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+
+        input {
+          width: 70px;
+          height: 30px;
+          background: greenyellow;
+          border: none;
+          color: black;
+          box-shadow: 0 0 0 3px white;
+          transition: 0.5s ease-in-out;
+          margin-bottom: 5px;
+        }
+        :hover {
+          color: rgb(255, 255, 255);
+          box-shadow: 0 0 5px 3px rgb(10, 10, 10);
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+//-------------ordi----------------------------
+@media (min-width: 558px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    .container {
+      background-color: rgb(235, 186, 186);
+
+      .mode_mobile{
+          display: none;
+      }
+
+      .inputs {
+        label {
+          display: flex;
+          justify-content: center;
+          font-size: 25px;
+          text-decoration: underline;
+          font-style: oblique;
+          color: lightcoral;
+          margin-top: 25px;
+          margin-top: 25px;
+        }
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+
+        input {
+          width: 70px;
+          height: 30px;
+          background: greenyellow;
+          border: none;
+          color: black;
+          box-shadow: 0 0 0 3px white;
+          transition: 0.5s ease-in-out;
+          margin-bottom: 5px;
+        }
+        :hover {
+          color: rgb(255, 255, 255);
+          box-shadow: 0 0 5px 3px rgb(10, 10, 10);
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}

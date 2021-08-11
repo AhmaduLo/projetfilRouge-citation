@@ -1,0 +1,40 @@
+
+<nav>
+    <div class="container">
+      <span  routerLink='/signup'  style="cursor: pointer;"><i class="fa fa-backward" aria-hidden="true"></i>Back</span>
+      <h1>Login</h1>
+  
+      <form  (ngSubmit)="valider()" [formGroup]="submitForm">
+  
+        <div class="cont_detail">
+          <div class="inputs">
+            <label class="labels">Name</label><br />
+            <input type="text" 
+                  class="form-control" 
+                  id="floatingInput" 
+                  placeholder="" 
+                  name="username" 
+                  formControlName="username"
+                  required>
+          </div>
+  
+          <div class="inputs">
+            <label class="labels">Password</label><br />
+            <input type="password" 
+                  class="form-control" 
+                  id="floatingPassword" 
+                  placeholder="" 
+                  name="password" 
+                  formControlName="password"
+                  required>
+            <div class="pswd_forget">Forgot your password</div>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Send" />
+        </div>
+      
+      </form>
+    </div>
+  </nav>
+  <button routerLink="/signup">Signup</button>

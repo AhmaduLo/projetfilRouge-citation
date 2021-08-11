@@ -1,0 +1,47 @@
+<nav>
+  <div class="container">
+    <form (ngSubmit)="valider()" [formGroup]="submitForm" class="mode_desk">
+      <div class="cont_detail" >
+        <div class="inputs">
+          <label class="labels">Your Citation</label><br />
+          <textarea 
+            style="font-size: 18px"
+            name="text"
+            id="text_commentaire"
+            cols="40"
+            rows="5"
+            placeholder="comment your Citation"
+            formControlName="text"
+          ></textarea>
+          
+
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+    <!-- ----------------mode mobil----------------- -->
+    <form (ngSubmit)="valider()" [formGroup]="submitForm" class="mode_mobile">
+      <div class="cont_detail" >
+        <div class="inputs">
+          <label class="labels">Your Citation</label><br />
+          <textarea 
+            style="font-size: 18px"
+            name="text"
+            id="text_commentaire"
+            cols="30"
+            rows="5"
+            placeholder="comment your Citation"
+            formControlName="text"
+          ></textarea>
+          
+
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+  </div>
+</nav>

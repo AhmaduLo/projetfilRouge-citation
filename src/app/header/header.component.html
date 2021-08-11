@@ -1,0 +1,24 @@
+<header>
+  <div class="container">
+    <div class="logo">
+      <h2>Citation</h2>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li>
+          <i class="fa fa-home" aria-hidden="true" routerLink="/acceuil"></i>
+        </li>
+        <li>
+          <i class="fa fa-pencil" aria-hidden="true" routerLink="/read"></i>
+        </li>
+        <li> <i class="fa fa-user" aria-hidden="true"  routerLink="/profil/{{idUser}}"></i></li>
+      </ul>
+    </div>
+
+    <div class="deconnecter" (click)="sign_out()">
+      <i class="fa fa-sign-out"  aria-hidden="true"></i>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>

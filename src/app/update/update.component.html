@@ -1,0 +1,24 @@
+<nav>
+    <div class="container">
+      <form (ngSubmit)="valider()" [formGroup]="submitForm">
+        <div class="cont_detail">
+          <div class="inputs">
+            <label class="labels">Citation</label><br />
+            <textarea
+              style="font-size: 18px"
+              name="text"
+              id="text_commentaire"
+              cols="40"
+              rows="5"
+              placeholder="comment your Citation"
+              formControlName="text"
+            ></textarea>
+          </div>
+        </div>
+        <div class="button" >
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </nav>
+  

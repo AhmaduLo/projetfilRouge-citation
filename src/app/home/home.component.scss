@@ -1,0 +1,118 @@
+@media (max-width: 558px) {
+  section {
+    background: rgba(238, 130, 238, 0.486);
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .button_signup {
+    button {
+      width: 80px;
+      background: blue;
+      margin-top: 25px;
+      margin-left: 25px;
+      height: 30px;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    :hover {
+      background-color: rgba(10, 10, 10, 0.651);
+    }
+  }
+
+  .para_textes {
+    border: 1px solid;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 20px;
+  }
+
+  .btn_ramdom {
+    button {
+      background-color: rgb(47, 0, 255);
+      width: 110px;
+      height: 30px;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 5px 1px rgb(255, 255, 255);
+      transition: 0.5s ease-in-out;
+    }
+    :hover {
+      background-color: rgb(253, 253, 253);
+      color: black;
+      box-shadow: 0 0 3px 3px rgba(34, 11, 243, 0.637);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+//-----------------ordi-------------------------
+@media (min-width: 558px) {
+  section {
+    background: rgba(238, 130, 238, 0.486);
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .button_signup {
+    button {
+      width: 80px;
+      background: blue;
+      margin-top: 25px;
+      margin-left: 25px;
+      height: 30px;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    :hover {
+      background-color: rgba(10, 10, 10, 0.651);
+    }
+  }
+
+  .para_textes {
+    border: 1px solid;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 20px;
+  }
+
+  .btn_ramdom {
+    button {
+      background-color: rgb(47, 0, 255);
+      width: 110px;
+      height: 30px;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 5px 1px rgb(255, 255, 255);
+      transition: 0.5s ease-in-out;
+    }
+    :hover {
+      background-color: rgb(253, 253, 253);
+      color: black;
+      box-shadow: 0 0 3px 3px rgba(34, 11, 243, 0.637);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

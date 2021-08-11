@@ -1,0 +1,58 @@
+<nav>
+  <div class="container">
+    <span routerLink="/" style="cursor: pointer"
+      ><i class="fa fa-backward" aria-hidden="true"></i>Back</span
+    >
+
+    <h1>Signup</h1>
+    <form (ngSubmit)="valider()" [formGroup]="submitForm">
+      <div class="cont_detail">
+        <div class="inputs">
+          <label class="labels">Name</label><br />
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            id="name-input"
+            formControlName="username"
+            #name
+          />
+        </div>
+
+        <div class="inputs">
+          <label class="labels">Email</label><br />
+          <input
+            type="email"
+            placeholder=" Enter your Email"
+            id="email-input"
+            formControlName="email"
+            required
+          />
+        </div>
+
+        <div class="inputs">
+          <label class="labels">Password</label><br />
+          <input
+            type="password"
+            placeholder=" Enter your Password"
+            id="password-input"
+            formControlName="password"
+          />
+        </div>
+
+        <div class="inputs">
+          <label class="labels">Password-confirmation</label><br />
+          <input
+            type="password"
+            placeholder="Enter your Password-confirmation"
+            id="password-confirmation-input"
+            formControlName="passwordconfirmation"
+          />
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Send" />
+      </div>
+      <div class="login" routerLink="/login">Login</div>
+    </form>
+  </div>
+</nav>
