@@ -52,8 +52,8 @@ export class AuthServiceService {
     );
   }
 
-  deletId(id: any,citation: Citation){
-    return this.httpClient.post<any>('http://localhost:8080/citation/'+id+"/user",citation);
+  deletId(id: any){
+    return this.httpClient.delete('http://localhost:8080/citation/'+id);
   }
 
   getCitationId(id: number) {
@@ -71,7 +71,7 @@ export class AuthServiceService {
     this.router.navigate(['/']);
   }
 
-  //-------------enregistrer le id du user dans le localSorage----------
+  //-------------recuperer le id du user dans le localSorage----------
   getIdByToken() {
     const id = localStorage.getItem('id');
     if (id) {

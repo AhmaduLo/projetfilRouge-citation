@@ -35,7 +35,7 @@ export class UpdateComponent implements OnInit {
 
   valider() {
     const value = this.submitForm.value;
-    console.log(value);
+    //console.log(value);
     this.authService.updateCitation(value).subscribe(
       (resp: any) => {
         this.router.navigate(['/acceuil']);

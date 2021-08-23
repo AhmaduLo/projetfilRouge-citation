@@ -28,9 +28,6 @@ export class ReadComponent implements OnInit {
         (res: any) => {
           console.log('post reussit');
           this.router.navigate(['/acceuil'])
-        },
-        (error) => {
-          console.log('post fail');
         }
       );
     }

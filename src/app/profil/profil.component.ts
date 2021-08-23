@@ -30,7 +30,7 @@ export class ProfilComponent implements OnInit {
     this.authServiceService.getId(routeId).subscribe(
       (res: any) => {
         this.user = res;
-        //console.log(this.user.citations);
+        console.log(this.user);
       },
       (errors) => {
         console.log('error');
@@ -39,9 +39,9 @@ export class ProfilComponent implements OnInit {
   }
 
   supp(citation:any){
-    this.authServiceService.deletId(this.user.id,citation).subscribe(
+    this.authServiceService.deletId(citation.id).subscribe(
       (res:any)=>{
-        console.log("delet");
+        console.log("delet reussit");
         
       }
     )
